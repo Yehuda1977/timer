@@ -1,0 +1,10 @@
+.progress-ring {
+  
+  transform: rotate(-90deg);
+  
+}
+
+.progress-ring__circle {
+  transition: stroke-dashoffset 0.0001s;
+  transform-origin: 50% 50%,
+}
