@@ -1,10 +1,38 @@
+/* move the progress ring counter clockwise by 90 degrees so 
+progress starts from the top */
 .progress-ring {
   
   transform: rotate(-90deg);
   
 }
 
+.input {
+  transform: rotate(90deg);
+}
+
+/* make the tick animation smoother */
 .progress-ring__circle {
-  transition: stroke-dashoffset 0.0001s;
-  transform-origin: 50% 50%,
+  transition: stroke-dashoffset 1s linear;
+  transform-origin: 50% 50%
+}
+
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#start {
+  margin-left: 11px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+  
+}
+
+#time {
+  text-align: center;
 }
